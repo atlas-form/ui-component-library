@@ -14,7 +14,9 @@
     "./styles/fallback.css": "./dist/styles/fallback.css"
   },
   "files": [
-    "dist"
+    "dist",
+    "src",
+    "README.md"
   ],
   "publishConfig": {
     "access": "public"
