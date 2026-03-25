@@ -1,0 +1,37 @@
+:root {
+  /* Neutral fallback for app-level tokens */
+  --app-bg: #ffffff;
+  --app-text: #111827;
+  --app-surface: #ffffff;
+  --app-border: #d1d5db;
+  --app-muted-text: #6b7280;
+  --app-hover: #f3f4f6;
+  --app-active-bg: #111827;
+  --app-active-text: #ffffff;
+
+  /* Neutral fallback for ui semantic tokens */
+  --ui-primary-bg: #111827;
+  --ui-primary-fg: #ffffff;
+  --ui-primary-bg-hover: #1f2937;
+
+  --ui-secondary-bg: #ffffff;
+  --ui-secondary-fg: #111827;
+  --ui-secondary-border: #d1d5db;
+  --ui-secondary-bg-hover: #f3f4f6;
+
+  --ui-success-bg: #e5e7eb;
+  --ui-success-fg: #111827;
+  --ui-success-bg-hover: #d1d5db;
+
+  --ui-warning-bg: #e5e7eb;
+  --ui-warning-fg: #111827;
+  --ui-warning-bg-hover: #d1d5db;
+
+  --ui-danger-bg: #e5e7eb;
+  --ui-danger-fg: #111827;
+  --ui-danger-bg-hover: #d1d5db;
+
+  --ui-info-bg: #e5e7eb;
+  --ui-info-fg: #111827;
+  --ui-info-bg-hover: #d1d5db;
+}

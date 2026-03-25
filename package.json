@@ -1,0 +1,17 @@
+{
+  "name": "@atlas-art/ui-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "dev:core": "pnpm --filter @atlas-art/ui-core dev",
+    "dev:react": "pnpm --filter @atlas-art/ui-react dev",
+    "publish:core": "pnpm --filter @atlas-art/ui-core publish --access public --no-git-checks",
+    "publish:react": "pnpm --filter @atlas-art/ui-react publish --access public --no-git-checks",
+    "publish:all": "pnpm run publish:core && pnpm run publish:react",
+    "publish:core:dry": "pnpm --filter @atlas-art/ui-core publish --access public --no-git-checks --dry-run",
+    "publish:react:dry": "pnpm --filter @atlas-art/ui-react publish --access public --no-git-checks --dry-run",
+    "publish:dry-run": "pnpm run publish:core:dry && pnpm run publish:react:dry"
+  }
+}

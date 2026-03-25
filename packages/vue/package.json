@@ -1,0 +1,10 @@
+{
+  "name": "@atlas-art/ui-vue",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "echo 'ui-vue is scaffold only'",
+    "typecheck": "echo 'ui-vue has no implementation yet'"
+  }
+}
