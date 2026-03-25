@@ -6,7 +6,7 @@ export const inputVariants = cva(
     "outline-none transition",
     "placeholder:text-(--app-muted-text)",
     "disabled:cursor-not-allowed disabled:opacity-50",
-    "focus-visible:ring-2 focus-visible:ring-(--app-active-bg)",
+    "focus-visible:ring-2 focus-visible:ring-(--ui-primary-bg)",
   ],
   {
     variants: {
@@ -16,7 +16,7 @@ export const inputVariants = cva(
         lg: "h-12 px-4 text-base",
       },
       state: {
-        default: "border-(--app-border) focus-visible:border-(--app-active-text)",
+        default: "border-(--app-border) focus-visible:border-(--ui-primary-bg)",
         error: "border-(--ui-danger-bg) focus-visible:border-(--ui-danger-bg)",
       },
     },

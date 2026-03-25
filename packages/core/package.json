@@ -1,6 +1,6 @@
 {
   "name": "@atlas-art/ui-core",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -11,7 +11,7 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./styles/fallback.css": "./dist/styles/fallback.css"
+    "./styles/ui.css": "./dist/styles/ui.css"
   },
   "files": [
     "dist",
