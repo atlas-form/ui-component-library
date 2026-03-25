@@ -22,7 +22,7 @@ function App() {
           <div style={{ display: "grid", gap: 12 }}>
             <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
               <Button
-                variant="secondary"
+                tone="secondary"
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
               >
                 Switch To {theme === "light" ? "Dark" : "Light"}
@@ -30,15 +30,15 @@ function App() {
               <span>Current Theme: {theme}</span>
             </div>
             <Input placeholder="Edit packages/*/src and verify instantly" />
-            <Button variant="primary">Primary</Button>
-            <Button variant="secondary">Secondary</Button>
+            <Button tone="primary">Primary</Button>
+            <Button tone="secondary">Secondary</Button>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <Button variant="success">Success</Button>
-              <Button variant="warning">Warning</Button>
-              <Button variant="danger">Danger</Button>
-              <Button variant="info">Info</Button>
-              <Button variant="outline">Outline</Button>
-              <Button variant="ghost">Ghost</Button>
+              <Button tone="success">Success</Button>
+              <Button tone="warning">Warning</Button>
+              <Button tone="danger">Danger</Button>
+              <Button tone="info">Info</Button>
+              <Button tone="primary" appearance="outline">Outline</Button>
+              <Button tone="primary" appearance="ghost">Ghost</Button>
             </div>
           </div>
         </CardContent>

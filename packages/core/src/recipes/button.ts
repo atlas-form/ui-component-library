@@ -9,22 +9,26 @@ export const buttonVariants = cva(
   ],
   {
     variants: {
-      variant: {
+      tone: {
         primary:
-          "border border-(--ui-primary-border) bg-(--ui-primary-bg) text-(--ui-primary-fg) hover:bg-(--ui-primary-bg-hover)",
+          "[--btn-bg:var(--ui-primary-bg)] [--btn-fg:var(--ui-primary-fg)] [--btn-border:var(--ui-primary-border)] [--btn-bg-hover:var(--ui-primary-bg-hover)]",
         secondary:
-          "border border-(--ui-secondary-border) bg-(--ui-secondary-bg) text-(--ui-secondary-fg) hover:bg-(--ui-secondary-bg-hover)",
+          "[--btn-bg:var(--ui-secondary-bg)] [--btn-fg:var(--ui-secondary-fg)] [--btn-border:var(--ui-secondary-border)] [--btn-bg-hover:var(--ui-secondary-bg-hover)]",
         success:
-          "border border-(--ui-success-border) bg-(--ui-success-bg) text-(--ui-success-fg) hover:bg-(--ui-success-bg-hover)",
+          "[--btn-bg:var(--ui-success-bg)] [--btn-fg:var(--ui-success-fg)] [--btn-border:var(--ui-success-border)] [--btn-bg-hover:var(--ui-success-bg-hover)]",
         warning:
-          "border border-(--ui-warning-border) bg-(--ui-warning-bg) text-(--ui-warning-fg) hover:bg-(--ui-warning-bg-hover)",
+          "[--btn-bg:var(--ui-warning-bg)] [--btn-fg:var(--ui-warning-fg)] [--btn-border:var(--ui-warning-border)] [--btn-bg-hover:var(--ui-warning-bg-hover)]",
         info:
-          "border border-(--ui-info-border) bg-(--ui-info-bg) text-(--ui-info-fg) hover:bg-(--ui-info-bg-hover)",
-        ghost: "bg-transparent text-(--app-text) hover:bg-(--app-hover)",
+          "[--btn-bg:var(--ui-info-bg)] [--btn-fg:var(--ui-info-fg)] [--btn-border:var(--ui-info-border)] [--btn-bg-hover:var(--ui-info-bg-hover)]",
         danger:
-          "border border-(--ui-danger-border) bg-(--ui-danger-bg) text-(--ui-danger-fg) hover:bg-(--ui-danger-bg-hover)",
+          "[--btn-bg:var(--ui-danger-bg)] [--btn-fg:var(--ui-danger-fg)] [--btn-border:var(--ui-danger-border)] [--btn-bg-hover:var(--ui-danger-bg-hover)]",
+      },
+      appearance: {
+        solid:
+          "border border-(--btn-border) bg-(--btn-bg) text-(--btn-fg) hover:bg-(--btn-bg-hover)",
         outline:
-          "border border-(--ui-primary-bg) bg-transparent text-(--ui-primary-bg) hover:bg-(--ui-primary-bg) hover:text-(--ui-primary-fg)",
+          "border border-(--btn-bg) bg-transparent text-(--btn-bg) hover:bg-(--btn-bg) hover:text-(--btn-fg)",
+        ghost: "bg-transparent text-(--btn-bg) hover:bg-(--app-hover)",
       },
       size: {
         sm: "h-8 px-3 text-xs",
@@ -37,7 +41,8 @@ export const buttonVariants = cva(
       },
     },
     defaultVariants: {
-      variant: "primary",
+      tone: "primary",
+      appearance: "solid",
       size: "md",
       fullWidth: false,
     },

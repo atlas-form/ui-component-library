@@ -21,16 +21,28 @@
     /* ─── Primary ─────────────────────────────────────────────── */
     --ui-primary-bg: var(--app-primary);
     --ui-primary-fg: color-mix(in oklab, white 90%, var(--ui-primary-bg));
-    --ui-primary-border: color-mix(in oklab, var(--ui-primary-bg) 70%, var(--app-bg));
+    --ui-primary-border: color-mix(
+      in oklab,
+      var(--ui-primary-bg) 70%,
+      var(--app-bg)
+    );
     --ui-primary-bg-hover: var(
       --app-primary-hover,
       color-mix(in oklab, var(--ui-primary-bg) 85%, var(--_mix-toward))
     );
 
     /* ─── Secondary ───────────────────────────────────────────── */
-    --ui-secondary-bg: color-mix(in oklab, var(--app-bg) 98%, var(--app-secondary));
+    --ui-secondary-bg: color-mix(
+      in oklab,
+      var(--app-bg) 85%,
+      var(--app-secondary)
+    );
     --ui-secondary-fg: var(--app-secondary);
-    --ui-secondary-border: color-mix(in oklab, var(--app-secondary) 35%, var(--app-bg));
+    --ui-secondary-border: color-mix(
+      in oklab,
+      var(--app-secondary) 35%,
+      var(--app-bg)
+    );
     --ui-secondary-bg-hover: var(
       --app-secondary-hover,
       color-mix(in oklab, var(--ui-secondary-bg) 92%, var(--app-secondary))
@@ -39,7 +51,11 @@
     /* ─── Success ─────────────────────────────────────────────── */
     --ui-success-bg: var(--app-success);
     --ui-success-fg: color-mix(in oklab, white 90%, var(--ui-success-bg));
-    --ui-success-border: color-mix(in oklab, var(--ui-success-bg) 70%, var(--app-bg));
+    --ui-success-border: color-mix(
+      in oklab,
+      var(--ui-success-bg) 70%,
+      var(--app-bg)
+    );
     --ui-success-bg-hover: var(
       --app-success-hover,
       color-mix(in oklab, var(--ui-success-bg) 85%, var(--_mix-toward))
@@ -48,7 +64,11 @@
     /* ─── Warning ─────────────────────────────────────────────── */
     --ui-warning-bg: var(--app-warning);
     --ui-warning-fg: color-mix(in oklab, white 90%, var(--ui-warning-bg));
-    --ui-warning-border: color-mix(in oklab, var(--ui-warning-bg) 70%, var(--app-bg));
+    --ui-warning-border: color-mix(
+      in oklab,
+      var(--ui-warning-bg) 70%,
+      var(--app-bg)
+    );
     --ui-warning-bg-hover: var(
       --app-warning-hover,
       color-mix(in oklab, var(--ui-warning-bg) 85%, var(--_mix-toward))
@@ -57,7 +77,11 @@
     /* ─── Danger ──────────────────────────────────────────────── */
     --ui-danger-bg: var(--app-danger);
     --ui-danger-fg: color-mix(in oklab, white 90%, var(--ui-danger-bg));
-    --ui-danger-border: color-mix(in oklab, var(--ui-danger-bg) 70%, var(--app-bg));
+    --ui-danger-border: color-mix(
+      in oklab,
+      var(--ui-danger-bg) 70%,
+      var(--app-bg)
+    );
     --ui-danger-bg-hover: var(
       --app-danger-hover,
       color-mix(in oklab, var(--ui-danger-bg) 85%, var(--_mix-toward))
@@ -78,6 +102,16 @@
       --_mix-toward: white;
       --app-secondary: #f8fafc;
     }
+  }
+
+  [data-theme="dark"] {
+    --_mix-toward: white;
+    --app-secondary: #f8fafc;
+  }
+
+  [data-theme="light"] {
+    --_mix-toward: black;
+    --app-secondary: #111827;
   }
 
   .dark {

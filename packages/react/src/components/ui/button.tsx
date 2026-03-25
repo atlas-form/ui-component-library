@@ -7,12 +7,12 @@ export interface ButtonProps
     ButtonVariantProps {}
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, fullWidth, type = "button", ...props }, ref) => {
+  ({ className, tone, appearance, size, fullWidth, type = "button", ...props }, ref) => {
     return (
       <button
         ref={ref}
         type={type}
-        className={cn(buttonVariants({ variant, size, fullWidth }), className)}
+        className={cn(buttonVariants({ tone, appearance, size, fullWidth }), className)}
         {...props}
       />
     );
