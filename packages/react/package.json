@@ -1,6 +1,6 @@
 {
   "name": "@atlas-art/ui-react",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -42,7 +42,7 @@
     }
   },
   "dependencies": {
-    "@atlas-art/ui-core": "^0.1.12",
+    "@atlas-art/ui-core": "^0.1.13",
     "class-variance-authority": "^0.7.1"
   },
   "devDependencies": {
