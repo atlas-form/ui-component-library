@@ -1,6 +1,6 @@
 {
   "name": "@atlas-art/ui-core",
-  "version": "0.1.5",
+  "version": "0.1.12",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -17,8 +17,6 @@
     "dist",
     "src",
     "styles",
-    "tsconfig.json",
-    "tsup.config.ts",
     "README.md"
   ],
   "publishConfig": {

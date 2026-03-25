@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+@source "../../../packages/react/src/**/*.{ts,tsx}";
+@source "../../../packages/core/src/**/*.{ts,tsx}";

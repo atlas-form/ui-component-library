@@ -30,7 +30,7 @@ React:
 
 ```tsx
 import { Button } from "@atlas-art/ui-react";
-import "@atlas-art/ui-core/styles/fallback.css";
+import "@atlas-art/ui-react/styles/ui.css";
 ```
 
 Platform-agnostic core:

@@ -6,3 +6,10 @@ Includes:
 
 - React UI components (`Button`, `Input`, `Card`, ...)
 - optional `react-router` adapter (`@atlas-art/ui-react/adapters/react-router`)
+
+Usage:
+
+```tsx
+import "@atlas-art/ui-react/styles/ui.css";
+import { Button } from "@atlas-art/ui-react";
+```

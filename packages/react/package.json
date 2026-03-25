@@ -1,6 +1,6 @@
 {
   "name": "@atlas-art/ui-react",
-  "version": "0.1.5",
+  "version": "0.1.12",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -11,6 +11,7 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
+    "./styles/ui.css": "./dist/styles/ui.css",
     "./adapters/react-router": {
       "types": "./dist/adapters/react-router/index.d.ts",
       "import": "./dist/adapters/react-router/index.js",
@@ -20,15 +21,13 @@
   "files": [
     "dist",
     "src",
-    "tsconfig.json",
-    "tsup.config.ts",
     "README.md"
   ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && mkdir -p dist/styles && cp ../core/styles/ui.css dist/styles/ui.css",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit"
   },
@@ -43,7 +42,7 @@
     }
   },
   "dependencies": {
-    "@atlas-art/ui-core": "workspace:*",
+    "@atlas-art/ui-core": "^0.1.12",
     "class-variance-authority": "^0.7.1"
   },
   "devDependencies": {

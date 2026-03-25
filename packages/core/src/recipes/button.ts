@@ -11,18 +11,20 @@ export const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-(--ui-primary-bg) text-(--ui-primary-fg) hover:bg-(--ui-primary-bg-hover)",
+          "border border-(--ui-primary-border) bg-(--ui-primary-bg) text-(--ui-primary-fg) hover:bg-(--ui-primary-bg-hover)",
         secondary:
           "border border-(--ui-secondary-border) bg-(--ui-secondary-bg) text-(--ui-secondary-fg) hover:bg-(--ui-secondary-bg-hover)",
         success:
-          "bg-(--ui-success-bg) text-(--ui-success-fg) hover:bg-(--ui-success-bg-hover)",
+          "border border-(--ui-success-border) bg-(--ui-success-bg) text-(--ui-success-fg) hover:bg-(--ui-success-bg-hover)",
         warning:
-          "bg-(--ui-warning-bg) text-(--ui-warning-fg) hover:bg-(--ui-warning-bg-hover)",
-        info: "bg-(--ui-info-bg) text-(--ui-info-fg) hover:bg-(--ui-info-bg-hover)",
+          "border border-(--ui-warning-border) bg-(--ui-warning-bg) text-(--ui-warning-fg) hover:bg-(--ui-warning-bg-hover)",
+        info:
+          "border border-(--ui-info-border) bg-(--ui-info-bg) text-(--ui-info-fg) hover:bg-(--ui-info-bg-hover)",
         ghost: "bg-transparent text-(--app-text) hover:bg-(--app-hover)",
-        danger: "bg-(--ui-danger-bg) text-(--ui-danger-fg) hover:bg-(--ui-danger-bg-hover)",
+        danger:
+          "border border-(--ui-danger-border) bg-(--ui-danger-bg) text-(--ui-danger-fg) hover:bg-(--ui-danger-bg-hover)",
         outline:
-          "border border-(--ui-primary-bg) bg-transparent text-(--ui-primary-fg) hover:bg-(--ui-primary-bg)",
+          "border border-(--ui-primary-bg) bg-transparent text-(--ui-primary-bg) hover:bg-(--ui-primary-bg) hover:text-(--ui-primary-fg)",
       },
       size: {
         sm: "h-8 px-3 text-xs",

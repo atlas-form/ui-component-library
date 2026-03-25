@@ -1,0 +1,41 @@
+:root {
+  --app-bg: #f7f8fb;
+  --app-text: #0f172a;
+  --app-primary: #7957d0;
+  --app-success: #0f9d58;
+  --app-warning: #f9ab00;
+  --app-danger: #d93025;
+  --app-info: #1a73e8;
+
+  /* Optional explicit active colors */
+  --app-active-bg: var(--app-primary);
+  --app-active-text: color-mix(in oklab, white 90%, var(--app-primary));
+}
+
+:root.dark {
+  --app-bg: #0b1220;
+  --app-text: #e6edf7;
+  --app-primary: #8b74ff;
+  --app-success: #22c55e;
+  --app-warning: #f59e0b;
+  --app-danger: #ef4444;
+  --app-info: #38bdf8;
+
+  --app-active-bg: var(--app-primary);
+  --app-active-text: color-mix(in oklab, white 90%, var(--app-primary));
+}
+
+body {
+  margin: 0;
+  background: var(--app-bg);
+  color: var(--app-text);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial;
+}

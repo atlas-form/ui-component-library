@@ -8,5 +8,6 @@ export default defineConfig({
   clean: true,
   treeshake: true,
   splitting: false,
-  external: ["react", "react-dom", "react-router", "@atlas-art/ui-core"],
+  external: ["react", "react-dom", "react-router"],
+  noExternal: ["@atlas-art/ui-core"],
 });
